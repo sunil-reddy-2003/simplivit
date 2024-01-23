@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Cab</title>
+    
+</head>
+<body>
+
+    <h1>FindMyCab</h1>
+    <img src="taxi.jpg" alt="FindMyCab Image">
+    <p>"Find My Cab" is a web service designed to facilitate efficient and cost-effective cab sharing among students. The service aims to connect students with common travel routes, allowing them to share cabs and reduce transportation expenses while promoting a more sustainable and community-oriented approach to commuting</p>
+
+    <form>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="fromPlace">From Place:</label>
+        <input type="text" id="fromPlace" name="fromPlace" placeholder="Enter departure location" required>
+
+        <label for="toPlace">To Place:</label>
+        <input type="text" id="toPlace" name="toPlace" placeholder="Enter destination location" required>
+
+        <label for="numMembers">Number of Members:</label>
+        <input type="number" id="numMembers" name="numMembers" min="1" required>
+
+        <input type="submit" value="Search for Taxi">
+    </form>
+
+</body>
+</html>
