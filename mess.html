@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="mess.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie</title>
     
 </head>
 <body>
-    <h1>Foodie</h1>
-    <p>Introducing our Mess Menu Selection Portal – a user-friendly platform designed to empower students with the ability to customize their dining experience. We believe in catering to diverse tastes and preferences, and this portal allows you to choose between vegetarian, non-vegetarian, and special dietary options. The Mess Menu Selection Portal has been created to provide students with the flexibility to personalize their daily meals. We understand that dietary preferences and requirements vary, and this portal empowers you to make choices that align with your culinary preferences.</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="taxi.html">FindMyCab</a>
+        <a href="academics.html">Academics</a>
+        <a href="hostel.html">Accomodation</a>
+        <a href="mess.html">Foodie</a>
+        <a href="login.html" class="login">Log In</a>
+    </nav>
+    <div class="header-box">
+        <h1>Foodie</h1>
+        <p>Introducing our Mess Menu Selection Portal – a user-friendly platform designed to empower students with the ability to customize their dining experience. We believe in catering to diverse tastes and preferences, and this portal allows you to choose between vegetarian, non-vegetarian, and special dietary options. The Mess Menu Selection Portal has been created to provide students with the flexibility to personalize their daily meals. We understand that dietary preferences and requirements vary, and this portal empowers you to make choices that align with your culinary preferences.</p>
+    </div>
     <img src="mess.jpg" alt="Foodie Image">
     <h2>Veg Mess Menu</h2>
     
@@ -214,15 +225,15 @@
             </tbody>
         </table>
 
-    <div style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px;">
-        <h2>Complaint Box</h2>
-        <p>Welcome to our Mess Feedback and Complaint Box – a dedicated platform for students to voice their opinions and concerns regarding the quality of our mess services. We value your feedback and strive to continuously improve the dining experience for everyone on campus . The Mess Complaint Box serves as an effective channel for students to express their thoughts, suggestions, and complaints related to the mess facilities. Our aim is to create an open and transparent communication channel, enabling us to address your concerns promptly and enhance the overall dining experience.</p>
-        <form>
-            <label for="complaint">Type your complaint:</label><br>
-            <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea><br>
-            <input type="submit" value="Submit Complaint">
-        </form>
-    </div>
+        <div class="complaint-box">
+            <h2>Complaint Box</h2>
+            <p>Welcome to our Mess Feedback and Complaint Box...</p>
+            <form>
+                <label for="complaint">Type your complaint:</label><br>
+                <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit Complaint">
+            </form>
+        </div>
 
 </body>
 </html>
