@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('taxi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Adjust text color for better readability on the background */
+}
+
+nav {
+    background-color: #000000;
+    color: #000000;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #000000; /* Set text color to black on hover */
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #ff0000; /* Change color on hover, you can adjust this */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: none; /* Hide the image element since it's now a background */
+}
+
+p {
+    color: #fff; /* Set paragraph color to white */
+    line-height: 1.5;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better contrast with text */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff0000;
+}
