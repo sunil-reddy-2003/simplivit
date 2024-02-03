@@ -1,217 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accomodation</title>
-</head>
-<body>
-    <h1>Accomodation</h1>
-    <img src="hostels.jpg" alt="Accomodation Image">
-    <h2>Cleanliness service</h2>
-    <p>Welcome to our Room Cleaning Request System – a convenient platform designed to empower students with the ability to request cleaning services for their accommodations. We understand the importance of maintaining a clean and comfortable living space, and this system allows you to easily communicate your cleaning needs.
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('hostels1.jpg'); /* Replace 'your-background-image.jpg' with the actual image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-color: #f4f4f4; /* Fallback color if the image is not available */
+  color: #000000;
+}
 
-    </p>
+h1, h2, h3 {
+  color: #ffffff;
+}
 
-    <form>
-
-        <label for="blockName">Enter Block Name.:</label>
-        <input type="text" id="blockName" name="blockName" required>
-
-        <br>
-
-        <label for="roomNumber">Enter Room No.:</label>
-        <input type="text" id="roomNumber" name="roomNumber" required>
-
-        <br>
-
-        <label for="regNumber">Enter Reg No.:</label>
-        <input type="text" id="regNumber" name="regNumber" required>
-
-        <br>
-
-        <input type="submit" value="Submit Request">
-        
-    </form>
+/* ... (rest of your styles) */
 
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff96;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    <h2>Hostel Block Vacancies</h2>
-    <p>We are pleased to introduce our Hostel Block Vacancy Selection System, a user-friendly platform designed to enable students to choose their preferred accommodation type, whether AC or Non-AC. Our goal is to provide you with a comfortable living experience that aligns with your preferences, and this system allows you to make informed choices regarding your accommodation.</p>
-    <h3>AC Block Vacancies</h3>
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000000;
+}
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Block Name</th>
-                <th>6AC</th>
-                <th>4AC</th>
-                <th>3AC</th>
-                <th>2AC</th>
-                <th>1AC</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>A-BLOCK</td>
-                <td>1</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <tr>
-                <td>B-BLOCK</td>
-                <td>2</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <tr>
-                <td>C-BLOCK</td>
-                <td>3</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <tr>
-                <td>D-BLOCK</td>
-                <td>4</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <tr>
-                <td>E-BLOCK</td>
-                <td>6</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <tr>
-                <td>F-BLOCK</td>
-                <td>6</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <tr>
-                <td>G-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-            
-                <!-- Add values for the remaining columns as needed -->
-            </tr>
-            <!-- Add more rows as needed -->
-        </tbody>
-    </table>
-    
-    <h3>Non-AC Block Vacancies</h3>
-    
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Block Name</th>
-                <th>6AC</th>
-                <th>4AC</th>
-                <th>3AC</th>
-                <th>2AC</th>
-                <th>1AC</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>A-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <tr>
-                <td>B-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <tr>
-                <td>C-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <tr>
-                <td>D-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <tr>
-                <td>E-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <tr>
-                <td>F-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <tr>
-                <td>G-BLOCK</td>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>7</td>
-                <td>8</td>
-                <!-- Add values for the Non-AC block as needed -->
-            </tr>
-            <!-- Add more rows as needed -->
-        </tbody>
-    </table>
-    
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
 
-    <div style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px;">
-        <h2>Room Complaints</h2>
-        <p>Welcome to our Room Complaint Resolution System – a dedicated platform designed to address and resolve any concerns or issues you may have with your accommodation. We understand the importance of a comfortable living environment, and this system is in place to ensure that your concerns are heard and addressed promptly.</p>
-        <form>
-            <label for="complaint">Type your complaint:</label><br>
-            <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea><br>
-            <input type="submit" value="Submit Complaint">
-        </form>
-    </div>
+input[type="submit"] {
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+}
 
-</body>
-</html>
+input[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+tr{
+color: #ffffff;
+}
+th{
+  background-color: #000000;
+}
+
+div[style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px;"] {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.login {
+  float: right;
+}
+
+.header-box {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  background-image: url('hostels1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-box:hover {
+  background-color: #ff0000;
+}
+
+.header-box:hover h1,
+.header-box:hover p {
+  color: #fff;
+}
+
+.header-box:hover h2 {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.header-box:hover h2 {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.header-box:hover .slide {
+  opacity: 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #ff0000;
+}
+
+.header-box:hover h2 {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.header-box:hover .slide {
+  opacity: 1;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+p:hover {
+  opacity: 0.8;
+}
+
+.header-box:hover {
+  transform: scale(1.05);
+}
+
+h1, h2 {
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover {
+  color: #ff0000;
+}
