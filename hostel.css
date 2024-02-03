@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('hostels1.jpg'); /* Replace 'your-background-image.jpg' with the actual image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-color: #f4f4f4; /* Fallback color if the image is not available */
+  color: #000000;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+/* ... (rest of your styles) */
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff96;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+tr{
+color: #ffffff;
+}
+th{
+  background-color: #000000;
+}
+
+div[style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px;"] {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+nav {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.login {
+  float: right;
+}
+
+.header-box {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  background-image: url('hostels1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-box:hover {
+  background-color: #ff0000;
+}
+
+.header-box:hover h1,
+.header-box:hover p {
+  color: #fff;
+}
+
+.header-box:hover h2 {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.header-box:hover h2 {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.header-box:hover .slide {
+  opacity: 1;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #ff0000;
+}
+
+.header-box:hover h2 {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.header-box:hover .slide {
+  opacity: 1;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+p:hover {
+  opacity: 0.8;
+}
+
+.header-box:hover {
+  transform: scale(1.05);
+}
+
+h1, h2 {
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover {
+  color: #ff0000;
+}
