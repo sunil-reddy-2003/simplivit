@@ -1,103 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics</title>
-    <link rel="stylesheet" href="academics.css">
-</head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="taxi.html">FindMyCab</a>
-        <a href="academics.html">Academics</a>
-        <a href="hostel.html">Accomodation</a>
-        <a href="mess.html">Foodie</a>
-        <a href="login.html" class="login">Log In</a>
-    </nav>
-    <form id="backlogForm">
-        <h1>Backlog Subjects</h1>
-        <h2>Name</h2>
-        <input type="text" id="Name" placeholder="Enter your Name" required>
-        <h2>Register number</h2>
-        <input type="email" id="RegisterNumber" placeholder="Enter your Register number" required>
-        <h2>Email</h2>
-        <input type="email" id="Email" placeholder="Enter your Email" required>
-        <h2>Course Code</h2>
-        <input type="text" id="courseCode" placeholder="Enter the course code" required>
-        <h2>Course Name</h2>
-        <input type="text" id="courseName" placeholder="Enter the course name" required>
-        <h2>Phone number</h2>
-        <input type="tel" id="PhoneNumber" placeholder="Enter your Phone number" required>
-        <input type="submit" value="Submit">
-    </form>
+/* General styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: url('h1.jpg') center center no-repeat; 
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.25em;
+}
 
-    <div id="calculator">
-        <form>
-        <h1>CGPA Calculator</h1>
-            <div>
-                <label for="credit1">Semester 1</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="GPA1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-            <div>
-                <label for="credit1">Semester 2</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 3</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 4</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 5</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 6</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 7</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 8</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 9</label>
-                <input type="number" id="credit1" placeholder="Credits" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            
-             <div>
-                <label for="credit1">Semester 10</label>
-                <input type="number" id="credit1" placeholder="Credit Hours" required>
-                <input type="number" step="0.1" id="grade1" placeholder="GPA (0.0 - 10.0)" required>
-            </div>
-            <input type="submit" value="Calculate">
-        </form>
 
-        <div id="result"></div>
-    </div>
-</body>
-</html>
+
+nav {
+  background-color: rgba(10, 6, 35, 0.956); /* Change to a green color */
+  color: #ffffff;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#section1 {
+  background: url('car11.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#section2 {
+  background: url('academics1.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#section3 {
+  background: url('hostels1.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#section4 {
+  background: url('foodie.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#section5 {
+  background: url('h1.jpg') center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+#section5 .icon-class {
+  /* Add your regular styling for the icons here */
+  transition: transform 0.3s ease-in-out;
+}
+
+#section5 .icon-class:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+section {
+  margin-bottom: 20px;
+  color: #f0f0f0f0;
+  font-size: 1.10em;
+  padding: 20px; /* Adjust padding as needed */
+  text-align: left; /* Adjust text alignment as needed */
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+}
+
+section h2:hover {
+  color: #ff0000;
+}
+
+section h2:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+}
+
+section img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+section img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.login {
+  float: right;
+}
+
+#contact {
+  background-color: black; /* Change to a purple color */
+  padding: 20px;
+}
+
+#contact h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  padding: 10px;
+  margin: 5px;
+  color: #ffffff;
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #072e49; /* Change to a dark blue color */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Optional styling for sections */
+section {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #f0f0f0f0;
+}
+
+/* Styling for all images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#FindMyCab img,
+#Academics img,
+#Accomodation img,
+#Foodie img {
+  width: 450px;
+  height: 250px;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #f0f0f0f0;
+}
+
+a:hover {
+  color: #f0f0f0f0;
+  font-weight: bold;
+}
+
+/* cards */
+.card {
+  scroll-margin-top: 7rem;
+  border: 2px solid #ccc;
+  border-radius: 10%;
+  padding: 1rem;
+  background-color: rgb(0, 0, 0); /* Change to an orange color */
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.card img {
+  border: 2px unset #ccc;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-items: top;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card figure {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.card p {
+  padding: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 15px #5c4040;
+}
