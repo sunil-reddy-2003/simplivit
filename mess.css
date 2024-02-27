@@ -293,3 +293,11 @@ nav a:hover {
 }
 
 
+header {
+    background: url('h1.jpg') center center no-repeat; 
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.25em;
+  }

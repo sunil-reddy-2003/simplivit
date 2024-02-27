@@ -5,14 +5,18 @@
     <link rel="stylesheet" href="taxi.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find My Cab</title>
-    
+    <!-- Linking the JavaScript file -->
+    <script src="taxi.js"></script>
 </head>
 <body>
+    <header>
+        <h1>SIMPLIVIT</h1>
+    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="taxi.html">FindMyCab</a>
         <a href="academics.html">Academics</a>
-        <a href="hostel.html">Accomodation</a>
+        <a href="hostel.html">Accommodation</a>
         <a href="mess.html">Foodie</a>
         <a href="login.html" class="login">Log In</a>
     </nav>
@@ -20,7 +24,7 @@
     <img src="taxi.jpg" alt="FindMyCab Image">
     <p>FindMyCab is a comprehensive platform designed to streamline taxi-sharing services for students. This innovative service focuses on providing convenient and efficient transportation solutions within the university community. FindMyCab offers a user-friendly interface where students can easily locate and share rides, fostering a sense of community and sustainability. Through this platform, students can access information about available cabs, share rides with fellow students, and contribute to reducing carbon footprints by optimizing transportation resources. FindMyCab enhances the overall campus experience, promoting cost-effective and eco-friendly commuting options. Whether it's ensuring punctuality for academic commitments or simplifying travel to social events, FindMyCab is a valuable tool that prioritizes convenience, affordability, and environmental consciousness within the university setting.</p>
 
-    <form>
+    <form id="taxiForm">
         <label for="date">Select Date:</label>
         <input type="date" id="date" name="date" required>
 
@@ -39,9 +43,17 @@
         <input type="submit" value="Search for Taxi">
     </form>
 
+    <!-- Click button to display details -->
+    <button id="displayDetailsBtn" style="display:none;">Display Details</button>
 
-      
+    <!-- Display details section -->
+<div id="detailsSection" style="display:none;">
+    <button id="closeDetailsBtn">Close</button> <!-- Added close button -->
+    <div id="detailsContent">
+        <!-- Details will be displayed here -->
+    </div>
+</div>
 
-      
+
 </body>
 </html>

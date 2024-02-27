@@ -76,9 +76,88 @@ input {
 input[type="submit"] {
     background-color: #000000;
     color: #fff;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 input[type="submit"]:hover {
     background-color: #ff0000;
+}
+
+header {
+    background: url('h1.jpg') center center no-repeat; 
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+  /* CSS for the details section */
+
+  #detailsSection {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering trick */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#detailsSection.details-shown {
+    transform: translateY(0);
+}
+
+#detailsHandle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#detailsHandle span {
+    margin-right: 10px;
+}
+
+#detailsContent {
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Style for down arrow image */
+#detailsHandle img {
+    width: 20px;
+}
+
+
+
+#main-content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+}
+
+
+
+/* Style for the close button */
+#closeDetailsBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#closeDetailsBtn:hover {
+    background-color: #ff0000;
+    color: #fff;
 }

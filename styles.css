@@ -4,6 +4,14 @@ body {
   margin: 0;
   padding: 0;
 }
+marquee{
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.00em;
+  padding: 14px;
+
+}
+
 header {
   background: url('h1.jpg') center center no-repeat; 
   background-size: cover;
@@ -13,12 +21,11 @@ header {
   font-size: 1.25em;
 }
 
-
-
 nav {
   background-color: rgba(10, 6, 35, 0.956); /* Change to a green color */
   color: #ffffff;
   padding: 10px;
+  background-position: right top;
 }
 
 nav a {
@@ -68,6 +75,7 @@ nav a:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
+
 section {
   margin-bottom: 20px;
   color: #f0f0f0f0;
@@ -224,7 +232,7 @@ a:hover {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 .Profile {

@@ -15,7 +15,7 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
-/* ... (rest of your styles) */
+
 
 
 img {
@@ -180,4 +180,13 @@ h1, h2 {
 
 h1:hover, h2:hover {
   color: #ff0000;
+}
+
+header {
+  background: url('h1.jpg') center center no-repeat; 
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.25em;
 }

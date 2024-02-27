@@ -5,9 +5,13 @@
     <link rel="stylesheet" href="hostel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accomodation</title>
+    <!-- Linking the JavaScript file -->
+    <script src="HOSTEL.JS"></script>
 </head>
 <body>
-    <!-- navbar.html -->
+    <header>
+        <h1>SIMPLIVIT</h1>
+    </header>
 <nav>
     <a href="index.html">Home</a>
     <a href="taxi.html">FindMyCab</a>
@@ -217,7 +221,7 @@
     <div style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px;">
         <h2>Room Complaints</h2>
         <p>Welcome to our Room Complaint Resolution System – a dedicated platform designed to address and resolve any concerns or issues you may have with your accommodation. We understand the importance of a comfortable living environment, and this system is in place to ensure that your concerns are heard and addressed promptly.</p>
-        <form>
+        <form id="complaint-form">
             <label for="complaint">Type your complaint:</label><br>
             <textarea id="complaint" name="complaint" rows="4" cols="50"></textarea><br>
             <input type="submit" value="Submit Complaint">
